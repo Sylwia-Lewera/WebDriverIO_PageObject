@@ -1,5 +1,5 @@
 # WebDriverIO_PageObject
-workshops for JavaScript test automation training pusing WebdriverIO. Implementing POM approach.
+workshops for JavaScript test automation training using WebdriverIO. Implementing POM approach.
 
 HOME TASK 
 
