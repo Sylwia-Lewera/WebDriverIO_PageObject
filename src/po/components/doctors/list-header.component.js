@@ -1,4 +1,4 @@
-const BaseComponent =  require('./../common/base.component');
+const BaseComponent =  require('../common/base.component');
 
 class ListHeaderComponent extends BaseComponent {
 

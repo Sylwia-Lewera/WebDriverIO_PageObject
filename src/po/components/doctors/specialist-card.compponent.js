@@ -13,3 +13,5 @@ class SpecialistCardComponent extends BaseComponent {
         return this.rootEl.$('education');
     }
 }
+
+module.exports = SpecialistCardComponent;

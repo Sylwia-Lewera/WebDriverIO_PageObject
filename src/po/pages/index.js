@@ -1,11 +1,11 @@
-const DashboardPage = require('./dashboard.page.js');
-const DoctorsPage = require('./doctors.page.js');
+const DashboardPage = require('./dashboard.page');
+const DoctorsPage = require('./doctors.page');
 
 
 /**
  * 
  * @param name {'dashboard' | 'doctors'}
- * @returns {DashboardPage | DoctorsPage}
+ * @returns {DashboardPage/DoctorsPage}
  */
 function pages(name) {
     const items = {
