@@ -1,8 +1,9 @@
-const { pages } = require('../po');
+//const { pages } = require('../../po');
+const { pages } = require('../../po/pages');
 
 describe('Doctors page', () => {
     beforeEach(async function () {
-        await pages('dashboardPage').open();
+      await pages('dashboard').open();
       });
   
       it('Check page title', async function () {
@@ -10,12 +11,12 @@ describe('Doctors page', () => {
       });
 
       it('Open modal window for adding a new doctor', async () => {
-        await pages('dashboardPage').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click();
         await pages('doctors').doctorListHeader.addNewDoctorBtn.click();
         expect(pages('doctors').addDoctorModal.rootEl).toBeDisplayed(); 
       });
       it('Add new doctor', async () => {
-        await pages('dashboardPage').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click();
         await pages('doctors').doctorListHeader.addNewDoctorBtn.click();
         await (pages('doctors').addDoctorModal.rootEl).waitForDisplayed();
   
@@ -31,9 +32,8 @@ describe('Doctors page', () => {
         expect(pages('doctors').specialistCard(8).name).toHaveTest('Dr. John Doe');
         expect(pages('doctors').specialistCard(8).ducation).toHaveTest('Basic', {ignoreCase: true});
       });
-      pages('doctors').specialistCard(8)
       it('Close a modal window for adding new doctor', async () => {
-        await pages('dashboardPage').sideMenu.item('doctors').click();
+        await pages('dashboard').sideMenu.item('doctors').click();
         await pages('doctors').doctorListHeader.addNewDoctorBtn.click();
         await (pages('doctors').addDoctorModal.rootEl).waitForDisplayed();
   

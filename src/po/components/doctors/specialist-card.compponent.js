@@ -1,4 +1,4 @@
-const BaseComponent = require("../common/base.component");
+const BaseComponent = require('../common/base.component');
 
 class SpecialistCardComponent extends BaseComponent {
 
@@ -13,5 +13,4 @@ class SpecialistCardComponent extends BaseComponent {
         return this.rootEl.$('education');
     }
 }
-
 module.exports = SpecialistCardComponent;

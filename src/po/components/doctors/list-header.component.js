@@ -7,7 +7,7 @@ class ListHeaderComponent extends BaseComponent {
     }
 
     get addNewDoctorBtn() {
-        return this.rootEL.$('button.e-control');
+        return this.rootEl.$('button.e-control');
     }
 }
 

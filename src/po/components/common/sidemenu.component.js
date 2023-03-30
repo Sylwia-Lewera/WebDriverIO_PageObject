@@ -7,7 +7,7 @@ class SideMenuComponent extends BaseComponent {
     }
     
     get name() {
-        returnthis.rootEL.$('.name');
+        return this.rootEl.$('.name');
     }
 
     item(param){
@@ -16,7 +16,7 @@ class SideMenuComponent extends BaseComponent {
             schedule: '[routerlink="/calendar"]',
             doctors: '[routerlink="/doctors"]'
         };
-        return this.rootEL.$(selectors[param.toLowerCase()]);
+        return this.rootEl.$(selectors[param.toLowerCase()]);
     }
 }
 

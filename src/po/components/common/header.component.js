@@ -6,8 +6,8 @@ class HeaderComponent extends BaseComponent {
         super('planner-header');
     }
 
-    get logoutBTN() {
-        return this.rootEL.$('logout-icon-container');
+    get logoutBtn() {
+        return this.rootEl.$('logout-icon-container');
     }
 }
 
