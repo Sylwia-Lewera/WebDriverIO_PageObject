@@ -29,8 +29,8 @@ describe('Doctors page', () => {
         await pages('doctors').addDoctorModal.saveBtn.click();
         await expect(pages('doctors').addDoctorModal.rootEl).not.toBeDisplayed(); 
   
-        expect(pages('doctors').specialistCard(8).name).toHaveTest('Dr. John Doe');
-        expect(pages('doctors').specialistCard(8).ducation).toHaveTest('Basic', {ignoreCase: true});
+        expect(pages('doctors').specialistCard(8).name).toHaveText('Dr. John Doe');
+        expect(pages('doctors').specialistCard(8).ducation).toHaveText('Basic', {ignoreCase: true});
       });
       it('Close a modal window for adding new doctor', async () => {
         await pages('dashboard').sideMenu.item('doctors').click();

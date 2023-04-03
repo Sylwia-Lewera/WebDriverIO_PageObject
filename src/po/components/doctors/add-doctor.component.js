@@ -26,7 +26,7 @@ class AddDoctorComponent extends BaseComponent {
             designation: '[name="Designation"]',
 
         }
-        return this.rootEl.$(selectors[name.toLowrCase()]);
+        return this.rootEl.$(selectors[name.toLowerCase()]);
     }
 }
 
